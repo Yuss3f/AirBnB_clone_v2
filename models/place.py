@@ -1,4 +1,5 @@
-ce Module for HBNB project """
+#!/usr/bin/python3
+""" Place Module for HBNB project """
 from models.base_model import BaseModel
 
 
@@ -15,4 +16,3 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
-

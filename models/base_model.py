@@ -1,4 +1,4 @@
-s is the base model class for AirBnB"""
+"""This is the base model class for AirBnB"""
 from sqlalchemy.ext.declarative import declarative_base
 import uuid
 import models
@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class BaseModel:
-    """This class will defines all common attributes/methods
+    """This class will defines all common attributes / methods
     for other classes
     """
     id = Column(String(60), unique=True, nullable=False, primary_key=True)
@@ -64,7 +64,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """creates dictionary of the class  and returns
+        """creates dictionary of the class and returns
         Return:
             returns a dictionary of all the key values in __dict__
         """

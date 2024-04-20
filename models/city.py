@@ -1,4 +1,4 @@
-ity Module for HBNB project """
+"""This is city Module for HBNB project """
 from models.base_model import BaseModel
 
 

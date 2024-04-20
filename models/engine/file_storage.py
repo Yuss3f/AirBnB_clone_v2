@@ -1,4 +1,4 @@
-s module defines a class to manage file storage for hbnb clone"""
+"""This is module defines a class to manage file storage for hbnb clone"""
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -18,8 +18,8 @@ class FileStorage:
         """Returns a dictionary of models currently in storage.
 
         Args:
-            cls (class, optional): If specified, filters the result to include
-                only objects of the specified class.
+            cls (class , optional): If specified, filters the result to include
+                only objects of the specified class .
 
         Returns:
             dict: A dictionary containing objects in storage.
@@ -58,7 +58,7 @@ class FileStorage:
             with open(FileStorage.__file_path, 'r') as f:
                 temp = json.load(f)
                 for key, val in temp.items():
-                        self.all()[key] = classes[val['__class__']](**val)
+                    self.all()[key] = classes[val['__class__']](**val)
         except FileNotFoundError:
             pass
         except json.decoder.JSONDecodeError:

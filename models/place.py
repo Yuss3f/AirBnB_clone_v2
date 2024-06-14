@@ -1,5 +1,5 @@
 #!/usr/bin/python
-""" This is the place class """
+""" holds class Place"""
 import models
 from models.base_model import BaseModel, Base
 from os import getenv

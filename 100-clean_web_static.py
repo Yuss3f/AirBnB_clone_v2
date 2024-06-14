@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Deleting out-of-date archives
+Deletes out-of-date archives
 fab -f 100-clean_web_static.py do_clean:number=2
     -i ssh-key -u ubuntu > /dev/null 2>&1
 """
@@ -12,7 +12,7 @@ env.hosts = ['34.202.158.122', '54.167.175.39']
 
 
 def do_clean(number=0):
-    """Deleting out-of-date archives.
+    """Delete out-of-date archives.
     Args:
         number (int): The number of archives to keep.
     If number is 0 or 1, keeps only the most recent archive. If

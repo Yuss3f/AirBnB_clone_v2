@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This is the base model class for AirBnB
+Contains class BaseModel
 """
 
 from datetime import datetime

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Containing the FileStorage class
+Contains the FileStorage class
 """
 
 import json

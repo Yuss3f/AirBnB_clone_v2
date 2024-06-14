@@ -1,5 +1,5 @@
 #!/usr/bin/python
-""" This is the Review class """
+""" holds class Review"""
 import models
 from models.base_model import BaseModel, Base
 from os import getenv
